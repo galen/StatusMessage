@@ -1,18 +1,18 @@
 <?php
 
 /*
- * Status Message Class
+ * Form Status Message Class
  *
  * Easy way to deal with statuses in PHP
  *
  * @author Galen Grover <galenjr@gmail.com>
- * @package StatusMesssage
+ * @package FormatusMesssage
  *
  * @link https://github.com/galen/FormStatusMessage
  * 
  */
 
-class StatusMessage {
+class FormStatusMessage {
 
 	/*
 	 * Array of statuses
