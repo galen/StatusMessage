@@ -11,7 +11,7 @@ There are two main parts to a form status message
  - Status: Statuses translate to classes attached to the message container
  - Message: Message displayed to the user
 
-<a href="http://www.galengrover.com/projects/StatusMessage/example.php">Live example</a>
+<a href="http://www.galengrover.com/projects/FormStatusMessage/example.php">Live example</a>
 
 ##Usage
 
@@ -20,7 +20,7 @@ There are two main parts to a form status message
 	if ( isset( $_GET['value'] ) ) {
 		require( 'FormStatusMessage.php' );
 		if ( is_numeric( $_GET['value'] ) ) {
-			$status_message = new StatusMessage;
+			$status_message = new FormStatusMessage;
 			$status_message->setStatus( 'success' );
 			$status_message->setMessage( 'You have entered a valid number' );
 			// If you enter a number greater than 100 this status will be added
@@ -29,7 +29,7 @@ There are two main parts to a form status message
 			}
 		}
 		else {
-			$status_message = new StatusMessage;
+			$status_message = new FormStatusMessage;
 			$status_message->setStatus( 'error' );
 			// If you don't enter a value this status will be added
 			if ( trim( $_GET['value'] ) == '' ) {

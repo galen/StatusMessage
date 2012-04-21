@@ -6,7 +6,7 @@ error_reporting( E_ALL );
 if ( isset( $_GET['value'] ) ) {
 	require( 'FormStatusMessage.php' );
 	if ( is_numeric( $_GET['value'] ) ) {
-		$status_message = new StatusMessage;
+		$status_message = new FormStatusMessage;
 		$status_message->setStatus( 'success' );
 		$status_message->setMessage( 'You have entered a valid number' );
 		// If you enter a number greater than 100 this status will be added
@@ -15,7 +15,7 @@ if ( isset( $_GET['value'] ) ) {
 		}
 	}
 	else {
-		$status_message = new StatusMessage;
+		$status_message = new FormStatusMessage;
 		$status_message->setStatus( 'error' );
 		// If you don't enter a value this status will be added
 		if ( trim( $_GET['value'] ) == '' ) {
