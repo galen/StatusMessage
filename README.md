@@ -1,26 +1,26 @@
-#Form Status Message
+#Status Message
 
-An easy way to deal with form status messages
+An easy way to deal with status messages
 
 ---
 
-When someone fills out a form you need to display a status for that form (error, success, etc). This class provides a simple interfacing for doing so.
+When someone fills out a form you usually need to display a status (error, success, etc). This class provides a simple interfacing for doing so.
 
-There are two main parts to a form status message
+There are two main parts to a status message
 
  - Status: Statuses translate to classes attached to the message container
  - Message: Message displayed to the user
 
-<a href="http://www.galengrover.com/projects/FormStatusMessage/example.php">Live example</a>
+<a href="http://www.galengrover.com/projects/StatusMessage/example.php">Live example</a>
 
 ##Usage
 
 ### PHP code
 
 	if ( isset( $_GET['value'] ) ) {
-		require( 'FormStatusMessage.php' );
+		require( 'StatusMessage.php' );
 		if ( is_numeric( $_GET['value'] ) ) {
-			$status_message = new FormStatusMessage;
+			$status_message = new StatusMessage;
 			$status_message->setStatus( 'success' );
 			$status_message->setMessage( 'You have entered a valid number' );
 			// If you enter a number greater than 100 this status will be added
@@ -29,7 +29,7 @@ There are two main parts to a form status message
 			}
 		}
 		else {
-			$status_message = new FormStatusMessage;
+			$status_message = new StatusMessage;
 			$status_message->setStatus( 'error' );
 			// If you don't enter a value this status will be added
 			if ( trim( $_GET['value'] ) == '' ) {
