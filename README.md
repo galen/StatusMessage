@@ -11,8 +11,6 @@ There are two main parts to a status message
  - Status: Statuses translate to classes attached to the message container
  - Message: Message displayed to the user
 
-<a href="http://www.galengrover.com/projects/StatusMessage/example.php">Live example</a>
-
 ##Usage
 
 ### PHP code
